@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="header_Outside">
+            <!-- 로고 및 메뉴 -->
+            <div class="logo_Outside">
+                <h1><a href="#"><img class="logo" src="img/헤더/header_logo.png" alt=""></a></h1>
+            </div>
+
+            <nav>
+                <!-- 로그인 -->
+                <div class="log">
+                    <ul class="log_button">
+                        <li><a href="sub1.html">로그인</a></li>
+                        <li><a href="sub1.html">회원가입</a></li>
+                        <li><a href="sub1.html">주문조회</a></li>
+                        <li><a href="sub1.html">장바구니</a></li>
+                    </ul>
+                </div>
+
+                <!-- 메인 nav -->
+                <div class="main_nav">
+                    <a href="sub1.html" class="cart">
+                        <img src="img/헤더/basket_mini.png" alt="cart">
+                    </a>
+                    <img class="Mobile_nav" src="img/헤더/icon_menu.png" alt="">
+                    <ul class="main_nav_button">
+                        <li class="Shoppingmall_button"><a href="sub1.html">쇼핑몰</a></li>
+                        <li class="Story_button"><a href="sub1.html">코코젤리 스토어</a></li>
+                        <li class="Event_button"><a href="sub1.html">이벤트</a></li>
+                        <li class="client_button"><a href="sub1.html">고객지원</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="sub_nav_Outside">
+            <div class="sub_nav">
+                <ul class="Shoppingmall">
+                    <li><a href="sub1.html">베스트</a></li>
+                    <li><a href="sub1.html">전체</a></li>
+                    <li><a href="sub1.html">모래</a></li>
+                </ul>
+                <ul class="Story">
+                    <li><a href="sub1.html">브랜드 소개</a></li>
+                    <li><a href="sub1.html">제품 소개</a></li>
+                </ul>
+                <ul class="Event">
+                    <li><a href="sub1.html">진행중인 이벤트</a></li>
+                    <li><a href="sub1.html">지난 이벤트</a></li>
+                </ul>
+                <ul class="client">
+                    <li><a href="sub1.html">공지사항</a></li>
+                    <li><a href="sub1.html">FAQ</a></li>
+                    <li><a href="sub1.html">Q&A</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Mobile_subnav_bg">
+            
+        </div>
+        <div class="Mobile_subnav">
+            <div class="Mobile_subnav_header">
+                <p>회원님 환영합니다</p><button><img src="img/헤더/icon_close.png" alt="닫기"></button>
+            </div>
+            <div class="Mobile_log">
+                <ul>
+                    <!-- 로그인 -->
+                    <li><a href="#">로그인</a></li>
+                    <!-- 회원가입 -->
+                    <li><a href="#">회원가입</a></li>
+                    <!-- 주문조회 -->
+                    <li><a href="#">주문조회</a></li>
+                    <!-- 장바구니 -->
+                    <li><a href="#">장바구니</a></li>
+                </ul>
+            </div>
+            <div class="Mobile_menu">
+                <ul>
+                    <li>
+                        <div>쇼핑몰</div>
+                        <ul>
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">모래</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>코코젤리 스토리</div>
+                        <ul>
+                            <li><a href="#">브랜드 소개</a></li>
+                            <li><a href="#">제품소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>이벤트</div>
+                        <ul>
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">지난 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>고객지원</div>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 모바일 스크립트 -->
+        <script>
+            $(function(){
+                // 모바일 메뉴 버튼
+                $('.Mobile_menu div').click(function(){
+                    $(this).siblings('ul').slideToggle();
+                });
+                
+                // 모바일 메뉴 나오기
+                $('.Mobile_nav').click(function(){
+                    $('.Mobile_subnav_bg').fadeIn();
+                    $('.Mobile_subnav').fadeIn();
+                });
+                // 모바일 메뉴 닫기
+                $('img[alt="닫기"]').click(function(){
+                    $('.Mobile_subnav_bg').fadeOut();
+                    $('.Mobile_subnav').fadeOut();
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+
+                // 서브nav 버튼
+                $('.Shoppingmall_button, .Shoppingmall').mouseover(function(){
+                    $('.Shoppingmall').stop().slideDown(0);
+                    $('.sub_nav_Outside').stop().slideDown();
+                });
+                $('.Shoppingmall_button, .Shoppingmall').mouseout(function(){
+                    $('.Shoppingmall').stop().slideUp(0);
+                    $('.sub_nav_Outside').stop().slideUp();
+                });
+                $('.Story_button, .Story').mouseover(function(){
+                    $('.Story').stop().slideDown(0);
+                    $('.sub_nav_Outside').stop().slideDown();
+                });
+                $('.Story_button, .Story').mouseout(function(){
+                    $('.Story').stop().slideUp(0);
+                    $('.sub_nav_Outside').stop().slideUp();
+                });
+                $('.Event_button, .Event').mouseover(function(){
+                    $('.Event').stop().slideDown(0);
+                    $('.sub_nav_Outside').stop().slideDown();
+                });
+                $('.Event_button, .Event').mouseout(function(){
+                    $('.Event').stop().slideUp(0);
+                    $('.sub_nav_Outside').stop().slideUp();
+                });
+                $('.client_button, .client').mouseover(function(){
+                    $('.client').stop().slideDown(0);
+                    $('.sub_nav_Outside').stop().slideDown();
+                });
+                $('.client_button, .client').mouseout(function(){
+                    $('.client').stop().slideUp(0);
+                    $('.sub_nav_Outside').stop().slideUp();
+                });
+            });
+        </script>
+    </header>
+    <!-- 광고 -->
+    <div class="container">
+        <span class="left_button"></span>
+        <span class="right_button"></span>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/광고/1.png" alt="pc">
+                    <img src="img/광고/1.1" alt="mobile">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/광고/2.png" alt="pc">
+                    <img src="img/광고/2.1" alt="mobile">
+                </a>
+            </li>
+        </ul>
+        <script>
+            $(function(){
+                $('.container .left_button').click(function(){
+                    $('.container li:last').prependTo('.container ul');
+                    $('.container ul').css('margin-left','-100%');
+                    $('.container ul').stop().animate({marginLeft:0},800);
+                });
+                $('.container .right_button').click(function(){
+                    $('.container ul').stop().animate({marginLeft:'-100%'},800,function(){
+                    $('.container li:first').appendTo('.container ul');
+                    $('.container ul').css('margin-left','0');
+                    });
+
+                });
+            });
+        </script>
+    </div>
+    <!-- 코코젤리 구입하기 -->
+    <section class="Purchase_Outside">
+        <div class="Purchase">
+            <h2>코코젤리 구입하기</h2>
+            <ul>
+                <li class="Purchase_box">
+                    <a href="#">
+                        <div class="img"><img src="img/상품/상품1.png" alt=""></div>
+                    </a>
+                    <div class="Purchase_content">
+                        <p class="title">프레쉬 [유향] LD10 [7.26kg×1개]</p>
+                        <p class="fixed_price">54,000</p>
+                        <p class="sale_price">45,900</p>
+                    </div>
+                </li>
+                <li class="Purchase_box">
+                    <a href="#">
+                        <div class="img"><img src="img/상품/상품2.png" alt=""></div>
+                    </a>
+                    <div class="Purchase_content">
+                        <p class="title">프레쉬 [유향] LD10 [7.26kg×1개]</p>
+                        <p class="fixed_price">54,000</p>
+                        <p class="sale_price">45,900</p>
+                    </div>
+                </li>
+                <li class="Purchase_box">
+                    <a href="#">
+                        <div class="img"><img src="img/상품/상품3.png" alt=""></div>
+                    </a>
+                    <div class="Purchase_content">
+                        <p class="title">프레쉬 [유향] LD10 [7.26kg×1개]</p>
+                        <p class="fixed_price">54,000</p>
+                        <p class="sale_price">45,900</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 코코스토리 -->
+    <section class="cocostory">
+        <div class="cocostory2"></div>
+        <div class="cocostory1">
+            <div class="cocostory_box">
+                <h2>코코젤리 스토리</h2>
+                <p>“고양이와 집사 모두가 만족할 수 있는 모래는 없을까?”<br>
+                    라는 근본적인 고민에서 특별한 기술을 고안했습니다.</p>
+                <span><a href="#">자세히보기</a></span>
+            </div>
+            <img src="img/스토리/o.png" alt="o">
+            <img src="img/스토리/pet.png" alt="pet">
+        </div>
+    </section>
+    <!-- 코코젤리 리얼후기 -->
+    <section class="review_Outside">
+        <div class="review">
+            <h2>코코젤리 리얼후기</h2>
+            <div class="review_boxs">
+                <ul>
+                    <li class="review_box">
+                        <a href="#">
+                            <div class="border"></div>
+                            <div class="review_img">
+                                <img src="img/리뷰/리뷰1.jpg" alt="">
+                            </div>
+                            <div class="review_text">
+                                <div class="review_title">오가닉 [무향] LD12 [7.26kgΧ2개]</div>
+                                <div class="review_body">재구매각</div>
+                                <dl>
+                                    <dt>
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/빈별.png" alt="">
+                                    </dt>
+                                    <dd>2022.03.09</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="review_box">
+                        <a href="#">
+                            <div class="border"></div>
+                            <div class="review_img">
+                                <img src="img/리뷰/리뷰2.jpeg" alt="">
+                            </div>
+                            <div class="review_text">
+                                <div class="review_title">오가닉 [무향] LD12 [7.26kgΧ2개]</div>
+                                <div class="review_body">재구매각</div>
+                                <dl>
+                                    <dt>
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/빈별.png" alt="">
+                                    </dt>
+                                    <dd>2022.03.09</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="review_box">
+                        <a href="#">
+                            <div class="border"></div>
+                            <div class="review_img">
+                                <img src="img/리뷰/리뷰3.jpg" alt="">
+                            </div>
+                            <div class="review_text">
+                                <div class="review_title">오가닉 [무향] LD12 [7.26kgΧ2개]</div>
+                                <div class="review_body">재구매각</div>
+                                <dl>
+                                    <dt>
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/빈별.png" alt="">
+                                    </dt>
+                                    <dd>2022.03.09</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="review_box">
+                        <a href="#">
+                            <div class="border"></div>
+                            <div class="review_img">
+                                <img src="img/리뷰/리뷰1.jpg" alt="">
+                            </div>
+                            <div class="review_text">
+                                <div class="review_title">오가닉 [무향] LD12 [7.26kgΧ2개]</div>
+                                <div class="review_body">재구매각</div>
+                                <dl>
+                                    <dt>
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/빈별.png" alt="">
+                                    </dt>
+                                    <dd>2022.03.09</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="review_box">
+                        <a href="#">
+                            <div class="border"></div>
+                            <div class="review_img">
+                                <img src="img/리뷰/리뷰2.jpeg" alt="">
+                            </div>
+                            <div class="review_text">
+                                <div class="review_title">오가닉 [무향] LD12 [7.26kgΧ2개]</div>
+                                <div class="review_body">재구매각</div>
+                                <dl>
+                                    <dt>
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/빈별.png" alt="">
+                                    </dt>
+                                    <dd>2022.03.09</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="review_box">
+                        <a href="#">
+                            <div class="border"></div>
+                            <div class="review_img">
+                                <img src="img/리뷰/리뷰3.jpg" alt="">
+                            </div>
+                            <div class="review_text">
+                                <div class="review_title">오가닉 [무향] LD12 [7.26kgΧ2개]</div>
+                                <div class="review_body">재구매각</div>
+                                <dl>
+                                    <dt>
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/별.png" alt="">
+                                        <img src="img/리뷰/빈별.png" alt="">
+                                    </dt>
+                                    <dd>2022.03.09</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+                <button class="left direction"></button>
+                <button class="right direction"></button>
+            </div>
+            <button>
+                <a href="#">
+                    모두보기
+                </a>
+            </button>
+        </div>
+        <script>
+
+            // 호버시 보더
+            $(function(){
+                $('.review_box a').mouseover(function(){
+                    $(this).children('.border').stop().fadeIn(200);
+                });
+                $('.review_box a').mouseout(function(){
+                    $(this).children('.border').stop().fadeOut(200);
+                });
+            });
+
+            if(matchMedia("screen and (min-width: 961px)").matches)
+            {
+                // 넘어가기
+                $(function(){
+                    $('.review_boxs .left').click(function(){
+                        $('.review_boxs li:last').prependTo('.review_boxs ul');
+                        $('.review_boxs ul').css('margin-left','-33.33%');
+                        $('.review_boxs ul').stop().animate({marginLeft:0},800);
+                    });
+                    $('.review_boxs .right').click(function(){
+                        $('.review_boxs ul').stop().animate({marginLeft:'-33.33%'},800,function(){
+                        $('.review_boxs li:first').appendTo('.review_boxs ul');
+                        $('.review_boxs ul').css('margin-left','0');
+                        });
+
+                    });
+                });                
+            }
+
+            if(matchMedia("screen and (max-width: 960px)").matches)
+            {
+                // 넘어가기
+                $(function(){
+                    $('.review_boxs .left').click(function(){
+                        $('.review_boxs li:last').prependTo('.review_boxs ul');
+                        $('.review_boxs ul').css('margin-left','-50%');
+                        $('.review_boxs ul').stop().animate({marginLeft:0},800);
+                    });
+                    $('.review_boxs .right').click(function(){
+                        $('.review_boxs ul').stop().animate({marginLeft:'-50%'},800,function(){
+                        $('.review_boxs li:first').appendTo('.review_boxs ul');
+                        $('.review_boxs ul').css('margin-left','0');
+                        });
+
+                    });
+                });                
+            }
+
+            if(matchMedia("screen and (max-width: 770px)").matches)
+            {
+                // 넘어가기
+                $(function(){
+                    $('.review_boxs .left').click(function(){
+                        $('.review_boxs li:last').prependTo('.review_boxs ul');
+                        $('.review_boxs ul').css('margin-left','-100%');
+                        $('.review_boxs ul').stop().animate({marginLeft:0},800);
+                    });
+                    $('.review_boxs .right').click(function(){
+                        $('.review_boxs ul').stop().animate({marginLeft:'-100%'},800,function(){
+                        $('.review_boxs li:first').appendTo('.review_boxs ul');
+                        $('.review_boxs ul').css('margin-left','0');
+                        });
+
+                    });
+                });                
+            }
+
+
+        </script>
+    </section>
+    <!-- 푸터 -->
+    <footer>
+        <!-- 이니페이 -->
+        <div class="escrow_wrap">
+            <img src="img/푸터/escrow.png" alt="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다."
+            onclick="javascript:window.open('https://mark.inicis.com/mark/escrow_popup_v3.php?mid=cocojelly0','mark','scrollbars=no,resizable=no,width=565,height=683');">
+        </div>
+        <!-- 전화번호 -->
+        <div class="telephonenumber">
+            <div class="CSCenter">
+                <h3>CS Center</h3>
+                <div class="CSCenter_text">
+                    <p class="number">02-3775-2836~7</p>
+                    <p class="sub">09:00 ~ 18:00 <span>OFF</span> : SAT, SUN, HOLYDAY</p>
+                </div>
+            </div>
+            <div class="BankInfo">
+                <h3>Bank Info</h3>
+                <div class="BankInfo_text">
+                    <p class="number">02-3775-2836~7</p>
+                    <p class="sub">기업은행 <span>예금주</span> : ㈜테코이코</p>
+                </div>
+            </div>
+        </div>
+        <!-- 기업정보 -->
+        <div class="Enterprise">
+            <div class="footerlogo">
+                <img src="img/푸터/footer_logo.png" alt="">
+            </div>
+            <div class="information">
+                <p class="policy">개인정보처리방침 ㅣ 이용약관</p>
+                <p class="informations">COMPANY : ㈜테코이코ㅣ CEO : 최윤호, 안성희ㅣ 사업자등록번호 : 107-86-86695ㅣ CS Center : 02-3775-2836~7ㅣ E-MAIL : coco@ecolomic.com</p>
+                <p class="address">Address : 서울특별시 영등포구 여의대방로69길 7ㅣ 통신판매업 신고번호 : 제 2019-서울영등포-0971호</p>
+                <p class="email">Copyrightⓒ 2021 COCO JELLY. ALL RIGHT RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+
+@media(max-width:770px){
+    .bodyALL{width: 90%;height: auto;margin: 0 auto;display: flex;flex-direction:column;
+    margin-top: 50px;margin-bottom: 50px;}
+    /* 왼쪽 영역 */
+    .leftarea{width:100%;}
+    .formWrapclearfix{width:100%;}
+    .formWrapclearfix_title{width: 100%;height: 80px;font-weight: bold;text-align: center;
+    line-height: 80px;font-size: 22px;padding-left: 20px;margin-bottom: 10px;}
+    .formWrapclearfix_button{width: 100%;}
+    .formWrapclearfix_button ul{display: flex;flex-direction: row;}
+    .formWrapclearfix_button .on{border-bottom: 3px solid black;}
+    .formWrapclearfix_button li{width: 33.33%;height:56.25px;text-align: center;
+    line-height: 56.25px;color: #878787;cursor: pointer;}
+    .formWrapclearfix_button li a{display: block;width: 100%;height: 100%;padding-left: 20px;border-bottom: solid 1px #cfcfcf;}
+
+
+    /* 오른쪽 영역 */
+    .rightarea{width: 100%;}
+    .bast{width: 100%;height: 100%;}
+    .bast_title{width: 100%;position: relative;border-bottom: solid 1px #cfcfcf;
+    margin-bottom: 40px;text-align:right;}
+    .bast_title h2{display: none;}
+    .bast_title span{width: 25vw;line-height: 7vw;margin: 5.208vw 0;border:2px solid #cfcfcf;
+    display: inline-block;font-size: 2vw;text-align: center;cursor: pointer; color: #878787;}
+    .bast_title span img{width: 2.5vw;margin-left: 8vw;}
+    .bast_title ul{display: flex;flex-direction: column; position: absolute;right: 0;top: 125px;
+    width: 25vw;z-index: 5;background-color: white;display: none;}
+    .bast_title ul li{padding: 0 10px;font-size: 2.3vw;border: solid 2px #cfcfcf;border-style: none solid solid solid;
+    text-align: center;line-height: 5vw;}
+    .bast_title ul li:first-of-type{border-style: solid;}
+    .bast_title ul li a{display: block;width: 100%;height: 100%;color: #878787;}
+
+    .bast_product{width: 100%;}
+    .bast_product ul{width: 100%;display: flex;flex-direction: row;flex-wrap: wrap;}
+    .bast_product ul li{width: 47.5%; margin-bottom: 40px;}
+    .bast_product ul li:not(:nth-of-type(2n-1)) {margin-left: 5%;}
+
+    /* 상품박스 */
+    .product_photo{position: relative;}
+    .product_border{position: absolute;top: 0;width: 100%;height: 100%;display:none;border: solid black 3px;}
+    .product_border img[alt="장바구니 담기"]{width: 60px;height: 60px; bottom: 20px;right: 20px; position: absolute;
+    background: none;}
+    .product_photo img{width: 100%;}
+    .product_text{display: flex;flex-direction: column;}
+    .product_text h5{font-size:17px;margin-top: 20px;text-align: center;}
+    .listprice{font-size: 16px;color: #878787;text-align: center;text-decoration: line-through;
+    margin: 10px 0;}
+    .discountprice{text-align: center;font-weight: bold;font-size: 24px;}
+
+}
+
+
+@media(min-width:771px) and (max-width:960px){
+.bodyALL{width: 90%;height: auto;margin: 0 auto;display: flex;flex-direction:column;
+margin-top: 50px;margin-bottom: 50px;}
+/* 왼쪽 영역 */
+.leftarea{width:100%;}
+.formWrapclearfix{width:100%;}
+.formWrapclearfix_title{width: 100%;height: 80px;font-weight: bold;text-align: center;
+line-height: 80px;font-size: 22px;padding-left: 20px;margin-bottom: 10px;}
+.formWrapclearfix_button{width: 100%;}
+.formWrapclearfix_button ul{display: flex;flex-direction: row;}
+.formWrapclearfix_button .on{border-bottom: 3px solid black;}
+.formWrapclearfix_button li{width: 33.33%;height:56.25px;text-align: center;
+line-height: 56.25px;color: #878787;cursor: pointer;}
+.formWrapclearfix_button li a{display: block;width: 100%;height: 100%;padding-left: 20px;border-bottom: solid 1px #cfcfcf;}
+
+
+/* 오른쪽 영역 */
+.rightarea{width: 100%;}
+.bast{width: 100%;height: 100%;}
+.bast_title{width: 100%;position: relative;border-bottom: solid 1px #cfcfcf;
+margin-bottom: 40px;text-align: right;}
+.bast_title h2{display: none;}
+.bast_title span{width: 25vw;line-height: 7vw;margin: 5.208vw 0;border:2px solid #cfcfcf;
+display: inline-block;font-size: 2vw;text-align: center;cursor: pointer; color: #878787;}
+.bast_title span img{width: 2.5vw;margin-left: 8vw;}
+.bast_title ul{display: flex;flex-direction: column; position: absolute;right: 0;top: 125px;
+width: 25vw;z-index: 5;background-color: white;display: none;}
+.bast_title ul li{padding: 0 10px;font-size: 2.3vw;border: solid 2px #cfcfcf;border-style: none solid solid solid;
+text-align: center;line-height: 5vw;}
+.bast_title ul li:first-of-type{border-style: solid;}
+.bast_title ul li a{display: block;width: 100%;height: 100%;color: #878787;}
+
+.bast_product{width: 100%;}
+.bast_product ul{width: 100%;display: flex;flex-direction: row;flex-wrap: wrap;}
+.bast_product ul li{width: 30%; margin-bottom: 40px;}
+.bast_product ul li:not(:nth-of-type(3n-2)) {margin-left: 5%;}
+
+/* 상품박스 */
+.product_photo{position: relative;}
+.product_border{position: absolute;top: 0;width: 100%;height: 100%;display:none;border: solid black 3px;}
+.product_border img[alt="장바구니 담기"]{width: 60px;height: 60px; bottom: 20px;right: 20px; position: absolute;
+background: none;}
+.product_photo img{width: 100%;}
+.product_text{display: flex;flex-direction: column;}
+.product_text h5{font-size:20px;margin-top: 20px;text-align: center;}
+.listprice{font-size: 16px;color: #878787;text-align: center;text-decoration: line-through;
+margin: 10px 0;}
+.discountprice{text-align: center;font-weight: bold;font-size: 24px;}
+
+}
+
+
+@media(min-width:961px) and (max-width:1200px){
+ .bodyALL{width: 90%;height: auto;margin: 0 auto;display: flex;flex-direction:column;
+margin-top: 50px;margin-bottom: 50px;}
+/* 왼쪽 영역 */
+.leftarea{width:100%;}
+.formWrapclearfix{width:100%;}
+.formWrapclearfix_title{width: 100%;height: 80px;font-weight: bold;text-align: center;
+line-height: 80px;font-size: 22px;padding-left: 20px;margin-bottom: 10px;}
+.formWrapclearfix_button{width: 100%;}
+.formWrapclearfix_button ul{display: flex;flex-direction: row;}
+.formWrapclearfix_button .on{border-bottom: 3px solid black;}
+.formWrapclearfix_button li{width: 33.33%;height:56.25px;text-align: center;
+line-height: 56.25px;color: #878787;cursor: pointer;}
+.formWrapclearfix_button li a{display: block;width: 100%;height: 100%;padding-left: 20px;border-bottom: solid 1px #cfcfcf;}
+
+
+/* 오른쪽 영역 */
+.rightarea{width: 100%;}
+.bast{width: 100%;height: 100%;}
+.bast_title{width: 100%;position: relative;border-bottom: solid 1px #cfcfcf;
+margin-bottom: 40px;text-align: right;}
+.bast_title h2{display: none;}
+.bast_title span{width: 25vw;line-height: 7vw;margin: 5.208vw 0;border:2px solid #cfcfcf;
+display: inline-block;font-size: 20px;text-align: center;cursor: pointer; color: #878787;}
+.bast_title span img{width: 25px;margin-left: 8vw;}
+.bast_title ul{display: flex;flex-direction: column; position: absolute;right: 0;top: 125px;
+width: 25vw;z-index: 5;background-color: white;display: none;}
+.bast_title ul li{padding: 0 10px;font-size: 2.3vw;border: solid 2px #cfcfcf;border-style: none solid solid solid;
+text-align: center;line-height: 5vw;}
+.bast_title ul li:first-of-type{border-style: solid;}
+.bast_title ul li a{display: block;width: 100%;height: 100%;color: #878787;}
+
+.bast_product{width: 100%;}
+.bast_product ul{width: 100%;display: flex;flex-direction: row;flex-wrap: wrap;}
+.bast_product ul li{width: 30%; margin-bottom: 40px;}
+.bast_product ul li:not(:nth-of-type(3n-2)) {margin-left: 5%;}
+
+/* 상품박스 */
+.product_photo{position: relative;}
+.product_border{position: absolute;top: 0;width: 100%;height: 100%;display:none;border: solid black 3px;}
+.product_border img[alt="장바구니 담기"]{width: 60px;height: 60px; bottom: 20px;right: 20px; position: absolute;
+background: none;}
+.product_photo img{width: 100%;}
+.product_text{display: flex;flex-direction: column;}
+.product_text h5{font-size:20px;margin-top: 20px;text-align: center;}
+.listprice{font-size: 16px;color: #878787;text-align: center;text-decoration: line-through;
+margin: 10px 0;}
+.discountprice{text-align: center;font-weight: bold;font-size: 24px;}
+
+}
+
+@media(min-width:1201px){
+    
+.bodyALL{width: 1200px;height: auto;margin: 0 auto;display: flex;flex-direction:row;
+margin-top: 80px;margin-bottom: 50px;}
+/* 왼쪽 영역 */
+.leftarea{width:16.66%;}
+.formWrapclearfix{width:100%;}
+.formWrapclearfix_title{width: 100%;height: 80px;color: white;font-weight: bold;
+line-height: 80px;font-size: 25px;padding-left: 20px;background-image: url(../img/sub1/formWrapclearfix/guest_topimg.png);}
+.formWrapclearfix_button{width: 100%;}
+.formWrapclearfix_button .on{background-color:#878787;color: white;}
+.formWrapclearfix_button li{width: 100%;height:56.25px;border: solid 1px #878787; border-style: solid solid none solid;
+line-height: 56.25px;color: #878787;cursor: pointer;}
+.formWrapclearfix_button li:last-of-type{border-style: solid solid;}
+.formWrapclearfix_button li a{display: block;width: 100%;height: 100%;padding-left: 20px}
+
+
+/* 오른쪽 영역 */
+.rightarea{width: 80.34%;padding-left: 3%;}
+.bast{width: 100%;height: 100%;}
+.bast_title{width: 100%;height:60px;position: relative;border-bottom: solid 1px #cfcfcf;
+margin-bottom: 40px;}
+.bast_title h2{font-size: 32px;font-weight: bold;}
+.bast_title ul{display: flex;flex-direction: row; position: absolute;right: 0;bottom: 20px;}
+.bast_title ul li{padding: 0 10px;font-size: 16px;border-right: solid 1px #cfcfcf;}
+.bast_title ul li:last-of-type{padding-right: 0;border: none;}
+.bast_title ul li .on{font-weight: bold;}
+.bast_title span{display: none;}
+
+.bast_product{width: 100%;}
+.bast_product ul{width: 100%;display: flex;flex-direction: row;flex-wrap: wrap;}
+.bast_product ul li{width: 30%; margin-bottom: 40px;}
+.bast_product ul li:not(:nth-of-type(3n-2)) {margin-left: 5%;}
+
+/* 상품박스 */
+.product_photo{position: relative;}
+.product_border{position: absolute;top: 0;width: 100%;height: 100%;display:none;border: solid black 3px;}
+.product_border img[alt="장바구니 담기"]{width: 60px;height: 60px; bottom: 20px;right: 20px; position: absolute;
+background: none;}
+.product_photo img{width: 100%;}
+.product_text{display: flex;flex-direction: column;}
+.product_text h5{font-size:20px;margin-top: 20px;text-align: center;}
+.listprice{font-size: 16px;color: #878787;text-align: center;text-decoration: line-through;
+margin: 10px 0;}
+.discountprice{text-align: center;font-weight: bold;font-size: 24px;}
+
+
+}

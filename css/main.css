@@ -1,0 +1,308 @@
+
+@media(max-width:770px){
+
+    /* 광고 */
+    .container{position: relative;height:120vw;width: 100%;overflow: hidden;margin-bottom: 80px;}
+    .container span{position:absolute;width: 30px;height: 60px;background-size: contain;
+    top: 50%;cursor: pointer;transform: translateY(-50%);background-repeat: no-repeat;}
+    .container .left_button{left: 30px;background-image: url(../img/방향/arrow_left.png);}
+    .container .right_button{right: 30px;background-image: url(../img/방향/arrow_right.png);}
+    .container ul{width: 200%;height: 100%;}
+    .container li{width: 50%;float: left;}
+    .container img{width: 100%;height: 100%;z-index: 5;}
+    .container img[alt="pc"]{display: none;}
+    .container img[alt="mobile"]{display: block;}
+    
+    /* 코코젤리 구입하기 */
+    .Purchase_Outside{width:100%;height: auto; margin-bottom: 80px;padding: 0 30px;}
+    .Purchase{width:100%;height:100%;margin: 0 auto;}
+    .Purchase h2{text-align: center;font-size: 5vw;margin-bottom: 3.604vw;}
+    .Purchase ul{width: 100%;display: flex;flex-direction: row;justify-content: space-between;
+    flex-wrap: wrap;}
+    .Purchase ul li{width: 50%;padding: 0 3%;margin-bottom: 30px;}
+    .Purchase .img{width: 100%;height:40vw;border: solid rgb(206, 206, 206) 2px;}
+    .Purchase .img:hover{border: solid 2px black;transition: 0.3s;}
+    .Purchase .img img{width: 100%;height: 100%;}
+    
+    .Purchase_content{text-align: center; margin-top: 20px;}
+    .Purchase_content p{margin-top: 8px;}
+    .Purchase .title{font-size: 20px;}
+    .Purchase .fixed_price{font-size: 16px;text-decoration: line-through;}
+    .Purchase .sale_price{font-size: 24px;font-weight: bold;}
+    
+    /* 코코스토리 */
+    .cocostory{width: 100%;height: auto; display: flex;flex-direction:column;}
+    .cocostory1{width: 100%;height: 300px; position: relative;}
+    .cocostory_box{position: absolute;top: 50%;left:30px;transform: translateY(-50%);
+    width: auto;padding-right: 40px;}
+    .cocostory_box h2{font-size: 5vw;}
+    .cocostory_box p{font-size: 18px;color: rgb(77, 77, 77);margin: 3vw 0;}
+    .cocostory_box span{display: block;width: 160px;height: 45px;line-height: 45px;text-align: center;
+    border: solid black 1px;}
+    .cocostory_box span a{width: 100%;height: 100%;display: block;}
+    .cocostory1 img[alt="o"]{position: absolute;top: -20px;right: 0;width:25vw;}
+    .cocostory1 img[alt="pet"]{position: absolute;bottom: 20px;right:50px;width:10vw;}
+    .cocostory2{width: 100%;height: 60vw; background-image: url(../img/스토리/bg_cocostoty.png);background-size: cover;}
+    
+    /* 코코젤리 리얼후기 */
+    .review_Outside{width: 100%;height: 830px;background-color:#ececec;padding: 80px 30px;}
+    .review{width: 100%;height: 100%;margin: 0 auto;}
+    .review h2{text-align: center;font-size: 5vw;margin-bottom: 2.604vw;}
+    .review_boxs{width: 100%;height: 480px;overflow: hidden;margin-bottom: 50px;position: relative;}
+    .review_boxs .direction{position: absolute;top: 40%;width: 80px;height: 80px;border-radius: 50px;
+    background-color: white;opacity: 0.5; background-repeat: no-repeat;background-position: center;
+    background-size: 15px;cursor: pointer;display: none;}
+    .review_boxs .left{left:0;background-image:url(../img/방향/p_slide_prev.png);}
+    .review_boxs .right{right:0;background-image: url(../img/방향/p_slide_next.png);}
+    .review_boxs:hover .direction{display: block;}
+    
+    .review_boxs ul{width: 600%; height:100%;display: flex;flex-direction: row;justify-content: space-between;}
+    .review_box{width:22%;height:100%;padding: 0 10px;float: left;}
+    .review_box a{display: block;width: auto;height:100%; position: relative;}
+    .review_img{width:100%;height: 70%;}
+    .review_img img{width: 100%;height: 100%;}
+    .review_text{width:100%;height: 30%; padding: 28px;background-color: white;}
+    .review_title{font-size: 19px; margin-bottom: 15px;font-weight: bold;width: 100%;height: 25px;
+    overflow: hidden;}
+    .review_body{font-size: 16px;height: 48px;width: 100%;margin-bottom: 25px;color: #888;}
+    .review_text img{width: 14px;margin-right: 5px;}
+    .review_text img:last-of-type{margin-right:0;}
+    .review_text dl{display: flex;flex-direction: row;}
+    .review_text dt{width: 70%;}
+    .review_text dd{width: 30%;text-align: right;}
+    .review button{width: 160px;height: 45px;line-height: 45px;border: 1px solid black;
+    font-size: 16px;display: block;margin: 0 auto;}
+    .review button a{width: 100%;height: 100%;display: block;}
+    .border{border: solid 3px black; position: absolute;top: 0;width: 100%;height: 100%;
+    display:none;}
+}
+  
+
+@media(min-width:771px) and (max-width:960px){
+
+    
+    /* 광고 */
+    .container{position: relative;height:30vw;width: 100%;overflow: hidden;margin-bottom: 80px;}
+    .container span{position:absolute;width: 30px;height: 60px;background-size: contain;
+    top: 50%;cursor: pointer;transform: translateY(-50%);background-repeat: no-repeat;}
+    .container .left_button{left: 70px;background-image: url(../img/방향/arrow_left.png);}
+    .container .right_button{right: 70px;background-image: url(../img/방향/arrow_right.png);}
+    .container ul{width: 200%;height: 100%;}
+    .container li{width: 50%;float: left;}
+    .container img{width: 100%;height: 100%;z-index: 5;}
+    
+    /* 코코젤리 구입하기 */
+    .Purchase_Outside{width:100%;height: auto; margin-bottom: 80px;padding: 0 30px;}
+    .Purchase{width:100%;height:100%;margin: 0 auto;}
+    .Purchase h2{text-align: center;font-size: 2.5vw;margin-bottom: 2.604vw;}
+    .Purchase ul{width: 100%;display: flex;flex-direction: row;justify-content: space-between;}
+    .Purchase ul li{width: 30%;}
+    .Purchase .img{width: 100%;height: 30vw;border: solid rgb(206, 206, 206) 2px;}
+    .Purchase .img:hover{border: solid 2px black;transition: 0.3s;}
+    .Purchase .img img{width: 100%;height: 100%;}
+    
+    .Purchase_content{text-align: center; margin-top: 20px;}
+    .Purchase_content p{margin-top: 8px;}
+    .Purchase .title{font-size: 20px;}
+    .Purchase .fixed_price{font-size: 16px;text-decoration: line-through;}
+    .Purchase .sale_price{font-size: 24px;font-weight: bold;}
+    
+    /* 코코스토리 */
+    .cocostory{width: 100%;height: 35.1vw; display: flex;flex-direction: row;}
+    .cocostory1{width: 50%;position: relative;}
+    .cocostory_box{position: absolute;top: 50%;left:100px;transform: translateY(-50%);
+    width: auto;padding-right: 40px;}
+    .cocostory_box h2{font-size: 2.5vw;}
+    .cocostory_box p{font-size: 14px;color: rgb(77, 77, 77);margin: 3vw 0;}
+    .cocostory_box span{display: block;width: 160px;height: 45px;line-height: 45px;text-align: center;
+    border: solid black 1px;}
+    .cocostory_box span a{width: 100%;height: 100%;display: block;}
+    .cocostory1 img[alt="o"]{position: absolute;top: 0;left: -55px;width:10vw;}
+    .cocostory1 img[alt="pet"]{position: absolute;bottom: 50px;right:50px;width:3vw;}
+    .cocostory2{width: 50%;background-image: url(../img/스토리/bg_cocostoty.png);background-size: cover;}
+    
+    /* 코코젤리 리얼후기 */
+    .review_Outside{width: 100%;height: 830px;background-color:#ececec;padding: 80px 30px;}
+    .review{width: 100%;height: 100%;margin: 0 auto;}
+    .review h2{text-align: center;font-size: 2.5vw;margin-bottom: 2.604vw;}
+    .review_boxs{width: 100%;height: 480px;overflow: hidden;margin-bottom: 50px;position: relative;}
+    .review_boxs .direction{position: absolute;top: 50%;width: 80px;height: 80px;border-radius: 50px;
+    background-color: white;opacity: 0.5; background-repeat: no-repeat;background-position: center;
+    background-size: 15px;cursor: pointer;display: none;}
+    .review_boxs .left{left:0;background-image:url(../img/방향/p_slide_prev.png);}
+    .review_boxs .right{right:0;background-image: url(../img/방향/p_slide_next.png);}
+    .review_boxs:hover .direction{display: block;}
+    
+    .review_boxs ul{width: 300%; height:100%;display: flex;flex-direction: row;justify-content: space-between;}
+    .review_box{width:22%;height:100%;padding: 0 10px;float: left;}
+    .review_box a{display: block;width: auto;height:100%; position: relative;}
+    .review_img{width:100%;height: 280px;}
+    .review_img img{width: 100%;height: 100%;}
+    .review_text{width:100%; padding: 28px;background-color: white;}
+    .review_title{font-size: 19px; margin-bottom: 15px;font-weight: bold;width: 100%;height: 25px;
+    overflow: hidden;}
+    .review_body{font-size: 16px;height: 48px;width: 100%;margin-bottom: 25px;color: #888;}
+    .review_text img{width: 14px;margin-right: 5px;}
+    .review_text img:last-of-type{margin-right:0;}
+    .review_text dl{display: flex;flex-direction: row;}
+    .review_text dt{width: 70%;}
+    .review_text dd{width: 30%;text-align: right;}
+    .review button{width: 160px;height: 45px;line-height: 45px;border: 1px solid black;
+    font-size: 16px;display: block;margin: 0 auto;}
+    .review button a{width: 100%;height: 100%;display: block;}
+    .border{border: solid 3px black; position: absolute;top: 0;width: 100%;height: 100%;
+    display:none;}
+
+}
+
+
+@media(min-width:961px) and (max-width:1200px){
+ 
+    /* 광고 */
+    .container{position: relative;height:30vw;width: 100%;overflow: hidden;margin-bottom: 80px;}
+    .container span{position:absolute;width: 30px;height: 60px;background-size: contain;
+    top: 50%;cursor: pointer;transform: translateY(-50%);background-repeat: no-repeat;}
+    .container .left_button{left: 70px;background-image: url(../img/방향/arrow_left.png);}
+    .container .right_button{right: 70px;background-image: url(../img/방향/arrow_right.png);}
+    .container ul{width: 200%;height: 100%;}
+    .container li{width: 50%;float: left;}
+    .container img{width: 100%;height: 100%;z-index: 5;}
+    
+    /* 코코젤리 구입하기 */
+    .Purchase_Outside{width:100%;height: auto; margin-bottom: 80px;padding: 0 30px;}
+    .Purchase{width:100%;height:100%;margin: 0 auto;}
+    .Purchase h2{text-align: center;font-size: 2.5vw;margin-bottom: 2.604vw;}
+    .Purchase ul{width: 100%;display: flex;flex-direction: row;justify-content: space-between;}
+    .Purchase ul li{width: 30%;}
+    .Purchase .img{width: 100%;height: 30vw;border: solid rgb(206, 206, 206) 2px;}
+    .Purchase .img:hover{border: solid 2px black;transition: 0.3s;}
+    .Purchase .img img{width: 100%;height: 100%;}
+    
+    .Purchase_content{text-align: center; margin-top: 20px;}
+    .Purchase_content p{margin-top: 8px;}
+    .Purchase .title{font-size: 20px;}
+    .Purchase .fixed_price{font-size: 16px;text-decoration: line-through;}
+    .Purchase .sale_price{font-size: 24px;font-weight: bold;}
+    
+    /* 코코스토리 */
+    .cocostory{width: 100%;height: 35.1vw; display: flex;flex-direction: row;}
+    .cocostory1{width: 50%;position: relative;}
+    .cocostory_box{position: absolute;top: 50%;left:100px;transform: translateY(-50%);
+    width: auto;padding-right: 40px;}
+    .cocostory_box h2{font-size: 2.5vw;}
+    .cocostory_box p{font-size: 14px;color: rgb(77, 77, 77);margin: 3vw 0;}
+    .cocostory_box span{display: block;width: 160px;height: 45px;line-height: 45px;text-align: center;
+    border: solid black 1px;}
+    .cocostory_box span a{width: 100%;height: 100%;display: block;}
+    .cocostory1 img[alt="o"]{position: absolute;top: 0;left: -55px;width:10vw;}
+    .cocostory1 img[alt="pet"]{position: absolute;bottom: 50px;right:50px;width:3vw;}
+    .cocostory2{width: 50%;background-image: url(../img/스토리/bg_cocostoty.png);background-size: cover;}
+    
+    /* 코코젤리 리얼후기 */
+    .review_Outside{width: 100%;height: 830px;background-color:#ececec;padding: 80px 30px;}
+    .review{width: 100%;height: 100%;margin: 0 auto;}
+    .review h2{text-align: center;font-size: 2.5vw;margin-bottom: 2.604vw;}
+    .review_boxs{width: 100%;height: 480px;overflow: hidden;margin-bottom: 50px;position: relative;}
+    .review_boxs .direction{position: absolute;top: 50%;width: 80px;height: 80px;border-radius: 50px;
+    background-color: white;opacity: 0.5; background-repeat: no-repeat;background-position: center;
+    background-size: 15px;cursor: pointer;display: none;}
+    .review_boxs .left{left:0;background-image:url(../img/방향/p_slide_prev.png);}
+    .review_boxs .right{right:0;background-image: url(../img/방향/p_slide_next.png);}
+    .review_boxs:hover .direction{display: block;}
+    
+    .review_boxs ul{width: 200%; height:100%;display: flex;flex-direction: row;justify-content: space-between;}
+    .review_box{width:22%;height:100%;padding: 0 10px;float: left;}
+    .review_box a{display: block;width: auto;height:100%; position: relative;}
+    .review_img{width:100%;height: 280px;}
+    .review_img img{width: 100%;height: 100%;}
+    .review_text{width:100%; padding: 28px;background-color: white;}
+    .review_title{font-size: 19px; margin-bottom: 15px;font-weight: bold;width: 100%;height: 25px;
+    overflow: hidden;}
+    .review_body{font-size: 16px;height: 48px;width: 100%;margin-bottom: 25px;color: #888;}
+    .review_text img{width: 14px;margin-right: 5px;}
+    .review_text img:last-of-type{margin-right:0;}
+    .review_text dl{display: flex;flex-direction: row;}
+    .review_text dt{width: 70%;}
+    .review_text dd{width: 30%;text-align: right;}
+    .review button{width: 160px;height: 45px;line-height: 45px;border: 1px solid black;
+    font-size: 16px;display: block;margin: 0 auto;}
+    .review button a{width: 100%;height: 100%;display: block;}
+    .border{border: solid 3px black; position: absolute;top: 0;width: 100%;height: 100%;
+    display:none;}
+ 
+}
+
+@media(min-width:1201px){
+    
+
+/* 광고 */
+.container{position: relative;height:30vw;width: 100%;overflow: hidden;margin-bottom: 130px;}
+.container span{position:absolute;width: 30px;height: 60px;background-size: contain;
+top: 50%;cursor: pointer;transform: translateY(-50%);background-repeat: no-repeat;}
+.container .left_button{left: 70px;background-image: url(../img/방향/arrow_left.png);}
+.container .right_button{right: 70px;background-image: url(../img/방향/arrow_right.png);}
+.container ul{width: 200%;height: 100%;}
+.container li{width: 50%;float: left;}
+.container img{width: 100%;height: 100%;z-index: 5;}
+
+/* 코코젤리 구입하기 */
+.Purchase_Outside{width:100%;height: 600px; margin-bottom: 130px;}
+.Purchase{width:1200px;height:100%;margin: 0 auto;}
+.Purchase h2{text-align: center;font-size: 1.875vw;margin-bottom: 2.604vw;}
+.Purchase ul{width: 100%;display: flex;flex-direction: row;justify-content: space-between;}
+.Purchase ul li{width: 30%;}
+.Purchase .img{width: 100%;height: 350px;border: solid rgb(206, 206, 206) 2px;}
+.Purchase .img:hover{border: solid 2px black;transition: 0.3s;}
+.Purchase .img img{width: 100%;height: 100%;}
+
+.Purchase_content{text-align: center; margin-top: 20px;}
+.Purchase_content p{margin-top: 8px;}
+.Purchase .title{font-size: 20px;}
+.Purchase .fixed_price{font-size: 16px;text-decoration: line-through;}
+.Purchase .sale_price{font-size: 24px;font-weight: bold;}
+
+/* 코코스토리 */
+.cocostory{width: 100%;height: 35.1vw; display: flex;flex-direction: row;}
+.cocostory1{width: 50%;position: relative;}
+.cocostory_box{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.cocostory_box h2{font-size: 1.875vw;}
+.cocostory_box p{font-size: 18px;color: rgb(77, 77, 77);margin: 50px 0;}
+.cocostory_box span{display: block;width: 160px;height: 45px;line-height: 45px;text-align: center;
+border: solid black 1px;}
+.cocostory1 img[alt="o"]{position: absolute;top: 0;left: -55px;width:13vw;}
+.cocostory1 img[alt="pet"]{position: absolute;bottom: 50px;right:50px;width:5vw;}
+.cocostory2{width: 50%;background-image: url(../img/스토리/bg_cocostoty.png);background-size: cover;}
+
+/* 코코젤리 리얼후기 */
+.review_Outside{width: 100%;height: 930px;background-color:#ececec;padding: 100px 0;}
+.review{width: 1200px;height: 100%;margin: 0 auto;}
+.review h2{text-align: center;font-size: 1.875vw;margin-bottom: 2.604vw;}
+.review_boxs{width: 100%;height: 480px;overflow: hidden;margin-bottom: 50px;position: relative;}
+.review_boxs .direction{position: absolute;top: 50%;width: 80px;height: 80px;border-radius: 50px;
+background-color: white;opacity: 0.5; background-repeat: no-repeat;background-position: center;
+background-size: 15px;cursor: pointer;display: none;}
+.review_boxs .left{left:0;background-image:url(../img/방향/p_slide_prev.png);}
+.review_boxs .right{right:0;background-image: url(../img/방향/p_slide_next.png);}
+.review_boxs:hover .direction{display: block;}
+
+.review_boxs ul{width: 200%; height:100%;}
+.review_box{width: 400px;height:100%;padding: 0 30px;float: left;}
+.review_box a{display: block;width: auto;height:100%; position: relative;}
+.review_img{width:100%;height: 280px;}
+.review_img img{width: 100%;height: 100%;}
+.review_text{width:100%; padding: 28px;background-color: white;}
+.review_title{font-size: 19px; margin-bottom: 15px;font-weight: bold;}
+.review_body{font-size: 16px;height: 48px;width: 100%;margin-bottom: 25px;color: #888;}
+.review_text img{width: 16px;margin-right: 8px;}
+.review_text img:last-of-type{margin-right:0;}
+.review_text dl{display: flex;flex-direction: row;}
+.review_text dt{width: 50%;}
+.review_text dd{width: 50%;text-align: right;}
+.review button{width: 160px;height: 45px;line-height: 45px;border: 1px solid black;
+font-size: 16px;display: block;margin: 0 auto;}
+.review button a{width: 100%;height: 100%;display: block;}
+.border{border: solid 3px black; position: absolute;top: 0;width: 100%;height: 100%;
+display:none;}
+
+
+}

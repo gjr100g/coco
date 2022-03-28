@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sub1.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="header_Outside">
+            <!-- 로고 및 메뉴 -->
+            <div class="logo_Outside">
+                <h1><a href="index.html"><img class="logo" src="img/헤더/header_logo.png" alt=""></a></h1>
+            </div>
+
+            <nav>
+                <!-- 로그인 -->
+                <div class="log">
+                    <ul class="log_button">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">주문조회</a></li>
+                        <li><a href="#">장바구니</a></li>
+                    </ul>
+                </div>
+
+                <!-- 메인 nav -->
+                <div class="main_nav">
+                    <a href="#" class="cart">
+                        <img src="img/헤더/basket_mini.png" alt="cart">
+                    </a>
+                    <img class="Mobile_nav" src="img/헤더/icon_menu.png" alt="">
+                    <ul class="main_nav_button">
+                        <li class="Shoppingmall_button"><a href="#">쇼핑몰</a></li>
+                        <li class="Story_button"><a href="#">코코젤리 스토어</a></li>
+                        <li class="Event_button"><a href="#">이벤트</a></li>
+                        <li class="client_button"><a href="#">고객지원</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="sub_nav_Outside">
+            <div class="sub_nav">
+                <ul class="Shoppingmall">
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">모래</a></li>
+                </ul>
+                <ul class="Story">
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">제품 소개</a></li>
+                </ul>
+                <ul class="Event">
+                    <li><a href="#">진행중인 이벤트</a></li>
+                    <li><a href="#">지난 이벤트</a></li>
+                </ul>
+                <ul class="client">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Q&A</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Mobile_subnav_bg">
+            
+        </div>
+        <div class="Mobile_subnav">
+            <div class="Mobile_subnav_header">
+                <p>회원님 환영합니다</p><button><img src="img/헤더/icon_close.png" alt="닫기"></button>
+            </div>
+            <div class="Mobile_log">
+                <ul>
+                    <!-- 로그인 -->
+                    <li><a href="#">로그인</a></li>
+                    <!-- 회원가입 -->
+                    <li><a href="#">회원가입</a></li>
+                    <!-- 주문조회 -->
+                    <li><a href="#">주문조회</a></li>
+                    <!-- 장바구니 -->
+                    <li><a href="#">장바구니</a></li>
+                </ul>
+            </div>
+            <div class="Mobile_menu">
+                <ul>
+                    <li>
+                        <div>쇼핑몰</div>
+                        <ul>
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">모래</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>코코젤리 스토리</div>
+                        <ul>
+                            <li><a href="#">브랜드 소개</a></li>
+                            <li><a href="#">제품소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>이벤트</div>
+                        <ul>
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">지난 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>고객지원</div>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 모바일 스크립트 -->
+        <script>
+            $(function(){
+                // 모바일 메뉴 버튼
+                $('.Mobile_menu div').click(function(){
+                    $(this).siblings('ul').slideToggle();
+                });
+                
+                // 모바일 메뉴 나오기
+                $('.Mobile_nav').click(function(){
+                    $('.Mobile_subnav_bg').fadeIn();
+                    $('.Mobile_subnav').fadeIn();
+                });
+                // 모바일 메뉴 닫기
+                $('img[alt="닫기"]').click(function(){
+                    $('.Mobile_subnav_bg').fadeOut();
+                    $('.Mobile_subnav').fadeOut();
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+
+                // 서브nav 버튼
+                $('.Shoppingmall_button, .Shoppingmall').mouseover(function(){
+                    $('.Shoppingmall').stop().slideDown(0);
+                    $('.sub_nav_Outside').stop().slideDown();
+                });
+                $('.Shoppingmall_button, .Shoppingmall').mouseout(function(){
+                    $('.Shoppingmall').stop().slideUp(0);
+                    $('.sub_nav_Outside').stop().slideUp();
+                });
+                $('.Story_button, .Story').mouseover(function(){
+                    $('.Story').stop().slideDown(0);
+                    $('.sub_nav_Outside').stop().slideDown();
+                });
+                $('.Story_button, .Story').mouseout(function(){
+                    $('.Story').stop().slideUp(0);
+                    $('.sub_nav_Outside').stop().slideUp();
+                });
+                $('.Event_button, .Event').mouseover(function(){
+                    $('.Event').stop().slideDown(0);
+                    $('.sub_nav_Outside').stop().slideDown();
+                });
+                $('.Event_button, .Event').mouseout(function(){
+                    $('.Event').stop().slideUp(0);
+                    $('.sub_nav_Outside').stop().slideUp();
+                });
+                $('.client_button, .client').mouseover(function(){
+                    $('.client').stop().slideDown(0);
+                    $('.sub_nav_Outside').stop().slideDown();
+                });
+                $('.client_button, .client').mouseout(function(){
+                    $('.client').stop().slideUp(0);
+                    $('.sub_nav_Outside').stop().slideUp();
+                });
+            });
+        </script>
+    </header>
+    <div class="bodyALL">
+        <!-- 왼쪽 영역 -->
+        <div class="leftarea">
+            <div class="formWrapclearfix">
+                <div class="formWrapclearfix_title">
+                    쇼핑몰
+                </div>
+                <div class="formWrapclearfix_button">
+                    <ul>
+                        <li><a href="#" class="on">베스트</a></li>
+                        <li><a href="#">전체</a></li>
+                        <li><a href="#">모래</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 오른쪽 영역 -->
+        <div class="rightarea">
+            <div class="bast">
+                <div class="bast_title">
+                    <h2>베스트</h2>
+                    <span>
+                        정렬순
+                        <img src="img/방향/p_slide_prev - 복사본.png" alt="">
+                    </span>
+                    <ul>
+                        <li><a href="#" class="on">추천순</a></li>
+                        <li><a href="#">등록일순</a></li>
+                        <li><a href="#">높은 가격순</a></li>
+                        <li><a href="#">낮은 가격순</a></li>
+                        <li><a href="#">조회순</a></li>
+                    </ul>
+                    <script>
+                        $(function(){
+                            $('.bast_title span').click(function(){
+                                $('.bast_title ul').slideToggle();
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="bast_product">
+                    <ul>
+                        <li>
+                            <div class="product_photo">
+                                <a href="#">
+                                    <img src="img/sub1/product/d5ae1875093b0bee1b6109200a442412_water__c0_w280_h280.png" alt="">
+                                    <div class="product_border">
+                                        <img src="img/sub1/icon_like.png" alt="장바구니 담기">
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="product_text">
+                                <span class="product_title">
+                                    <h5>
+                                        프레쉬 [유향] LD10 [7.26kg×1개] + 오가닉 [무향] LD12 [7.26kg×1개]
+                                    </h5>
+                                </span>
+                                <span class="listprice">54,000</span>
+                                <span class="discountprice">45,900</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_photo">
+                                <a href="#">
+                                    <img src="img/sub1/product/d5ae1875093b0bee1b6109200a442412_water__c0_w280_h280.png" alt="">
+                                    <div class="product_border">
+                                        <img src="img/sub1/icon_like.png" alt="장바구니 담기">
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="product_text">
+                                <span class="product_title">
+                                    <h5>
+                                        프레쉬 [유향] LD10 [7.26kg×1개] + 오가닉 [무향] LD12 [7.26kg×1개]
+                                    </h5>
+                                </span>
+                                <span class="listprice">54,000</span>
+                                <span class="discountprice">45,900</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_photo">
+                                <a href="#">
+                                    <img src="img/sub1/product/d5ae1875093b0bee1b6109200a442412_water__c0_w280_h280.png" alt="">
+                                    <div class="product_border">
+                                        <img src="img/sub1/icon_like.png" alt="장바구니 담기">
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="product_text">
+                                <span class="product_title">
+                                    <h5>
+                                        프레쉬 [유향] LD10 [7.26kg×1개] + 오가닉 [무향] LD12 [7.26kg×1개]
+                                    </h5>
+                                </span>
+                                <span class="listprice">54,000</span>
+                                <span class="discountprice">45,900</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_photo">
+                                <a href="#">
+                                    <img src="img/sub1/product/d5ae1875093b0bee1b6109200a442412_water__c0_w280_h280.png" alt="">
+                                    <div class="product_border">
+                                        <img src="img/sub1/icon_like.png" alt="장바구니 담기">
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="product_text">
+                                <span class="product_title">
+                                    <h5>
+                                        프레쉬 [유향] LD10 [7.26kg×1개] + 오가닉 [무향] LD12 [7.26kg×1개]
+                                    </h5>
+                                </span>
+                                <span class="listprice">54,000</span>
+                                <span class="discountprice">45,900</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_photo">
+                                <a href="#">
+                                    <img src="img/sub1/product/d5ae1875093b0bee1b6109200a442412_water__c0_w280_h280.png" alt="">
+                                    <div class="product_border">
+                                        <img src="img/sub1/icon_like.png" alt="장바구니 담기">
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="product_text">
+                                <span class="product_title">
+                                    <h5>
+                                        프레쉬 [유향] LD10 [7.26kg×1개] + 오가닉 [무향] LD12 [7.26kg×1개]
+                                    </h5>
+                                </span>
+                                <span class="listprice">54,000</span>
+                                <span class="discountprice">45,900</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_photo">
+                                <a href="#">
+                                    <img src="img/sub1/product/d5ae1875093b0bee1b6109200a442412_water__c0_w280_h280.png" alt="">
+                                    <div class="product_border">
+                                        <img src="img/sub1/icon_like.png" alt="장바구니 담기">
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="product_text">
+                                <span class="product_title">
+                                    <h5>
+                                        프레쉬 [유향] LD10 [7.26kg×1개] + 오가닉 [무향] LD12 [7.26kg×1개]
+                                    </h5>
+                                </span>
+                                <span class="listprice">54,000</span>
+                                <span class="discountprice">45,900</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_photo">
+                                <a href="#">
+                                    <img src="img/sub1/product/d5ae1875093b0bee1b6109200a442412_water__c0_w280_h280.png" alt="">
+                                    <div class="product_border">
+                                        <img src="img/sub1/icon_like.png" alt="장바구니 담기">
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="product_text">
+                                <span class="product_title">
+                                    <h5>
+                                        프레쉬 [유향] LD10 [7.26kg×1개] + 오가닉 [무향] LD12 [7.26kg×1개]
+                                    </h5>
+                                </span>
+                                <span class="listprice">54,000</span>
+                                <span class="discountprice">45,900</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_photo">
+                                <a href="#">
+                                    <img src="img/sub1/product/d5ae1875093b0bee1b6109200a442412_water__c0_w280_h280.png" alt="">
+                                    <div class="product_border">
+                                        <img src="img/sub1/icon_like.png" alt="장바구니 담기">
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="product_text">
+                                <span class="product_title">
+                                    <h5>
+                                        프레쉬 [유향] LD10 [7.26kg×1개] + 오가닉 [무향] LD12 [7.26kg×1개]
+                                    </h5>
+                                </span>
+                                <span class="listprice">54,000</span>
+                                <span class="discountprice">45,900</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <script>
+                        $(function(){
+                            $('.product_photo').mouseover(function(){
+                                $(this).children('a').children('.product_border').stop().fadeIn(100);
+                            });
+                            $('.product_photo').mouseout(function(){
+                                $(this).children('a').children('.product_border').stop().fadeOut(100);
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer>
+        <!-- 이니페이 -->
+        <div class="escrow_wrap">
+            <img src="img/푸터/escrow.png" alt="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다."
+            onclick="javascript:window.open('https://mark.inicis.com/mark/escrow_popup_v3.php?mid=cocojelly0','mark','scrollbars=no,resizable=no,width=565,height=683');">
+        </div>
+        <!-- 전화번호 -->
+        <div class="telephonenumber">
+            <div class="CSCenter">
+                <h3>CS Center</h3>
+                <div class="CSCenter_text">
+                    <p class="number">02-3775-2836~7</p>
+                    <p class="sub">09:00 ~ 18:00 <span>OFF</span> : SAT, SUN, HOLYDAY</p>
+                </div>
+            </div>
+            <div class="BankInfo">
+                <h3>Bank Info</h3>
+                <div class="BankInfo_text">
+                    <p class="number">02-3775-2836~7</p>
+                    <p class="sub">기업은행 <span>예금주</span> : ㈜테코이코</p>
+                </div>
+            </div>
+        </div>
+        <!-- 기업정보 -->
+        <div class="Enterprise">
+            <div class="footerlogo">
+                <img src="img/푸터/footer_logo.png" alt="">
+            </div>
+            <div class="information">
+                <p class="policy">개인정보처리방침 ㅣ 이용약관</p>
+                <p class="informations">COMPANY : ㈜테코이코ㅣ CEO : 최윤호, 안성희ㅣ 사업자등록번호 : 107-86-86695ㅣ CS Center : 02-3775-2836~7ㅣ E-MAIL : coco@ecolomic.com</p>
+                <p class="address">Address : 서울특별시 영등포구 여의대방로69길 7ㅣ 통신판매업 신고번호 : 제 2019-서울영등포-0971호</p>
+                <p class="email">Copyrightⓒ 2021 COCO JELLY. ALL RIGHT RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
