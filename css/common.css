@@ -19,8 +19,8 @@
     .main_nav .cart img{height: 25px;}
     .main_nav .Mobile_nav{height: 20px;cursor: pointer;}
      /* 모바일 nav */
-     .Mobile_subnav{position: absolute;right: 0;top: 0;z-index: 3;background-color: #f8f8f8;
-    width: 83%;padding: 20px 0;height: auto;color: #444;font-weight: 600;}
+     .Mobile_subnav{position: fixed;right: 0;top: 0;z-index: 3;background-color: #f8f8f8;
+    width: 83%;padding: 20px 0;height: auto;color: #444;font-weight: 600;overflow-x: scroll;}
     .Mobile_subnav_header{display: flex;flex-direction: row;justify-content: space-between;
     padding: 5px 17px;}
     .Mobile_subnav_header p{font-size: 13px;}
@@ -39,7 +39,7 @@
     .Mobile_menu ul{width: 100%;height:auto;}
     .Mobile_menu ul ul li{width: 100%;height: 55px;line-height: 55px;background-color: #333;}
     .Mobile_menu ul ul a{display: block;width: 100%;height: 100%;color: white;padding-left: 30px;font-size: 14px;}
-    .Mobile_subnav_bg{position: absolute;top: 0;width: 100%;height: 100%;background-color: #333;
+    .Mobile_subnav_bg{position:fixed;top: 0;width: 100%;height: 100%;background-color: #333;
         opacity: 0.8;z-index: 1;}
 
     .Mobile_subnav{display: none;}

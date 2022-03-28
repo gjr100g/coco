@@ -132,11 +132,13 @@
                 $('.Mobile_nav').click(function(){
                     $('.Mobile_subnav_bg').fadeIn();
                     $('.Mobile_subnav').fadeIn();
+                    $("html, body").addClass('not_scroll');
                 });
                 // 모바일 메뉴 닫기
                 $('img[alt="닫기"]').click(function(){
                     $('.Mobile_subnav_bg').fadeOut();
                     $('.Mobile_subnav').fadeOut();
+                    $("html, body").removeClass('not_scroll');
                 });
             });
         </script>
